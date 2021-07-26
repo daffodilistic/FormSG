@@ -1,3 +1,4 @@
+import { RATING_THEME_KEY, RatingField } from './Field/Rating'
 import { YESNO_THEME_KEY, YesNoField } from './Field/YesNo'
 import { Banner } from './Banner'
 import { Button } from './Button'
@@ -12,16 +13,17 @@ import { Textarea } from './Textarea'
 import { Tile } from './Tile'
 
 export const components = {
+  Banner,
   Button,
-  Input,
-  Textarea,
-  PhoneNumberInput,
   Form,
-  Link,
   FormError,
   FormLabel,
+  Input,
+  Link,
+  PhoneNumberInput,
+  Textarea,
+  [RATING_THEME_KEY]: RatingField,
   [YESNO_THEME_KEY]: YesNoField,
   Tag,
-  Banner,
   Tile,
 }
