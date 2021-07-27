@@ -9,7 +9,7 @@ import { Input } from './Input'
 import { Link } from './Link'
 import { PhoneNumberInput } from './PhoneNumberInput'
 import { Textarea } from './Textarea'
-import { CustomTooltip, TOOLTIP_THEME_KEY } from './Tooltip'
+import { Tooltip } from './Tooltip'
 
 export const components = {
   Banner,
@@ -21,7 +21,7 @@ export const components = {
   Link,
   PhoneNumberInput,
   Textarea,
-  [TOOLTIP_THEME_KEY]: CustomTooltip,
+  Tooltip,
   [RATING_THEME_KEY]: RatingField,
   [YESNO_THEME_KEY]: YesNoField,
 }
