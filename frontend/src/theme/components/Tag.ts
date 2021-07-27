@@ -1,12 +1,14 @@
 import { ComponentMultiStyleConfig } from '@chakra-ui/theme'
 
+import { textStyles } from '../textStyles'
+
 export type TagVariants = 'solid' | 'light'
 
 export const Tag: ComponentMultiStyleConfig = {
   parts: [],
   baseStyle: {
     label: {
-      textStyle: 'caption-1',
+      ...textStyles['caption-1'],
     },
   },
   variants: {
@@ -24,7 +26,7 @@ export const Tag: ComponentMultiStyleConfig = {
     },
   },
   sizes: {
-    uni: {
+    md: {
       container: {
         p: '0.25rem',
         borderRadius: '0.25rem',
@@ -33,6 +35,6 @@ export const Tag: ComponentMultiStyleConfig = {
   },
   defaultProps: {
     variant: 'solid',
-    size: 'uni',
+    size: 'md',
   },
 }
